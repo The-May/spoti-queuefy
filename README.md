@@ -1,3 +1,5 @@
+<img width="200" height="200" alt="SQ" src="https://github.com/user-attachments/assets/dd0a5a9d-a8ff-48b9-a42d-df90f9be4ff7" />
+
 # Spoti-Queuefy
 
 This app exists because some people are too impatient, too drunk, or just think their song is more important than everyone else’s. Instead of letting them skip the line and ruin the current track, this interface forces songs to be added to the queue in order. Everyone gets a turn, and the music keeps playing without chaos.
