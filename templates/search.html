@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="section">
+    <h2>Search Songs</h2>
+
+    <!-- Search bar -->
+    <form action="{{ url_for('search') }}" method="get" autocomplete="off">
+        <input type="text" name="q" placeholder="Search for a song or artist">
+        <button type="submit" class="queue-btn">Search</button>
+    </form>
+</div>
+
+{% if results %}
+<div class="section">
+    <table>
+        <tr>
+            <th></th>
+            <th>Title</th>
+            <th>Artist</th>
+            <th></th>
+        </tr>
+        {% for track in results %}
+        <tr>
+            <td class="cover-cell">
+                <img src="{{ track.cover }}" class="cover">
+            </td>
+            <td>
+                <div class="song">{{ track.name }}</div>
+                <div class="artist">{{ track.artist }}</div>
+            </td>
+            <td style="width: 1%;">
+                <form action="{{ url_for('add') }}" method="post">
+                    <input type="hidden" name="uri" value="{{ track.uri }}">
+                    <button type="submit" class="queue-btn">Add</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endif %}
+
+{% endblock %}

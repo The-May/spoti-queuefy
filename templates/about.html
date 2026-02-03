@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="section">
+    <h2>About this</h2>
+    <p>
+        This app exists because some people are too impatient, too drunk, or just think
+        their song is more important than everyone else’s. Instead of letting them
+        skip the line and ruin the current track, this interface forces songs to be
+        added to the queue in order. Everyone gets a turn, and the music keeps playing
+        without chaos.
+    </p>
+    <p>
+        In short: add your songs, be patient, enjoy the music. Your ego can wait.
+    </p>
+
+    <!-- Back button -->
+    <form action="{{ url_for('index') }}" method="get" style="margin-top: 20px;">
+        <button type="submit" class="queue-btn">Back</button>
+    </form>
+
+    <!-- GitHub placeholder with QR code -->
+    <div style="margin-top: 20px;">
+        <strong>View source:</strong>
+        <div style="margin-top:5px;">
+            <img src="{{ url_for('static', filename='qrcode.png') }}" alt="GitHub QR" style="width:300px; height:300px; border-radius:8px;">
+        </div>
+    </div>
+</div>
+
+{% endblock %}

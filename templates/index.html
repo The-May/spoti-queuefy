@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="section">
+    <h2>Now Playing</h2>
+
+    {% if current %}
+    <table>
+        <tr class="now-playing">
+            <td><img class="cover" src="{{ current.cover }}"></td>
+            <td>
+                {{ current.name }}<br>
+                <span class="artist">{{ current.artist }}</span>
+            </td>
+        </tr>
+    </table>
+    {% else %}
+    <p class="muted">Nothing playing</p>
+    {% endif %}
+
+    <div style="margin-top: 10px;">
+        <a href="/search" class="queue-btn">Add songs</a>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Up Next</h2>
+    <table>
+        {% for track in queue %}
+        <tr>
+            <td><img class="cover" src="{{ track.cover }}"></td>
+            <td>{{ track.name }}</td>
+            <td class="artist">{{ track.artist }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+{% endblock %}

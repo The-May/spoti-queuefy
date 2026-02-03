@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #121212;
+    color: #ffffff;
+    margin: 20px;
+}
+
+/* Content wrapper to keep layout left-bound */
+.container {
+    max-width: 900px;
+}
+
+/* Headings */
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 30px;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #181818;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th {
+    text-align: left;
+    background: #282828;
+    padding: 10px;
+    font-size: 0.9em;
+    color: #b3b3b3;
+}
+
+td {
+    padding: 10px;
+    border-top: 1px solid #282828;
+    vertical-align: middle;
+}
+
+/* Hover effect for normal rows only */
+tr:not(.now-playing):hover {
+    background: #222;
+}
+
+/* Album covers */
+img.cover {
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+}
+
+/* Artist text */
+.artist {
+    color: #b3b3b3;
+    font-size: 0.9em;
+}
+
+/* Now playing row */
+.now-playing {
+    background: #1db954;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Explicitly prevent hover override on now playing */
+.now-playing:hover {
+    background: #1db954;
+}
+
+/* Queue button */
+.queue-btn {
+    background: #1db954;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #000;
+}
+
+.queue-btn:hover {
+    background: #1db954;
+}
+
+/* Search input */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    padding-top: 10px;
+    border-top: 1px solid #282828;
+    font-size: 0.9em;
+    color: #888;
+}
+
+footer a {
+    color: #888;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Small screens: allow full width naturally */
+@media (max-width: 920px) {
+    .container {
+        max-width: 100%;
+    }
+}
