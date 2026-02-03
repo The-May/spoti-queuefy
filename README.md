@@ -18,7 +18,13 @@ In short: add your songs, be patient, enjoy the music. Your ego can wait.
 
 ---
 
-## Setup
+## Setup with HA 
+- currently not available/ready
+
+## Setup with docker(compose)
+- currently not available/ready
+
+## Setup locally
 
 1. Clone the repository:
 
@@ -49,3 +55,5 @@ DEBUG=False
     Run the app:
 
 python app.py
+
+
