@@ -28,6 +28,15 @@ I was tired of disruptive guests and no good/real solution seemed to exist for t
 
 ---
 
+## Prereq
+- Constant Internet Access to the Spotify API
+- Spotify Premium (Free does not allow dev account/api access iirc)
+- create dev app in https://developer.spotify.com/dashboard (in case Spotify does not allow -> reach out to them and not to me) -> See also: https://community.spotify.com/t5/Spotify-for-Developers/Unable-to-create-app/m-p/7300324#M19538
+- create client ID + secret, App name + description: queuefy (or something else what makes it easy to identify for what it is used for), redirect URL http://127.0.0.1:8888/callback and API Uses: Web API -> Save
+
+<img width="658" height="543" alt="image" src="https://github.com/user-attachments/assets/14a7b93c-697a-4f16-8345-675804778e6b" />
+
+
 ## Setup locally
 
 1. Clone the repository:
