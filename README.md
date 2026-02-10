@@ -11,7 +11,7 @@ In short: add your songs, be patient, enjoy the music. Your ego can wait.
 
 This project should not be used with open ports on WAN and just be used for private parties!
 **Use only in your private LAN.**
-This project is not hardened at all, hat no pentests at all and I dont intend to harden it further.
+This project is not hardened at all, had no pentests at all and I dont intend to harden it further.
 I was tired of disruptive guests and no good/real solution seemed to exist for this.
 
 ## Features
